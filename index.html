@@ -1,0 +1,45 @@
+
+<html>
+	<head>
+		<title>Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+	</head>
+	<body>
+		<div id="first">
+			<h1>Give us your name, age, gender, and your social security number!</h1>
+			<h2>Trust me you're doing the right thing</h2>
+
+			<form name="myform" id="myform">
+				<label for="fname">First Name:</label>
+				<input type="text" class="txt" id="fname" name="firstname">
+				<label for="lname">Last Name:</label>
+				<input type="text" class="txt" id="lname" name="lastname">
+				<label for="age">Age:</label>
+				<input type="number" class="txt" id="age" name="age" min="0" max="120">
+				<label>Gender:</label>
+					<input type="radio" name="gender" value="male" checked>
+					<label class="rd">Male</label>
+					<input type="radio" name="gender" value="female">
+					<label class="rd">Female</label>
+					<input type="radio" name="gender" value="other">
+					<label class="rd">Other</label>
+				<label>Social Security Number:</label>
+				<input type="text" class="txt" name="social" maxlength="9">
+				<label>What did you think about this survey?</label>
+				<select name="thoughts">
+				  <option value="one">Life altering</option>
+				  <option value="two">I thought it was sketchy but I did it anyways because who cares about social security numbers</option>
+				  <option value="three">I want the government to know everything about me ;)</option>
+				  <option value="four">I like forms</option>
+				</select>
+				<input type="submit" id="submit4">
+			</form>
+	</div>
+	<div id="second">
+		<h1>You just got scammed!</h1>
+	</div>
+		<script type="text/javascript" src="JS/fvalidate.js"></script>
+	</body>
+</html>

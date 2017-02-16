@@ -1,0 +1,29 @@
+*{
+  font-family: helvetica;
+}
+
+body{
+  background-color: pink;
+}
+
+label {
+display:block;
+position:relative;
+}
+
+input{
+  width: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+input[type=radio]{
+  float: left;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.txt{
+  width: 100%;
+}
